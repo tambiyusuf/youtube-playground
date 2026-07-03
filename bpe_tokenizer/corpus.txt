@@ -1,0 +1,13 @@
+Dinamik ve Statik Hesaplama Grafikleri (Dynamic and Static Computational Graphs)
+PyTorch, dinamik hesaplama grafiği (define-by-run paradigm) sunar. Bu, hesaplama grafiğinin çalışma anında oluşturulması anlamına gelir; dolayısıyla model geliştirme ve hata ayıklama süreçlerinde büyük esneklik sağlar. Öte yandan, TensorFlow’un ilk sürümleri statik grafik kullanırken, TensorFlow 2.0 ile birlikte eager execution desteği getirerek dinamik grafik deneyimine yaklaşmıştır. Ancak, PyTorch’un doğal dinamik yapısı, özellikle araştırma ve deneysel geliştirme aşamalarında önemli avantajlar sunduğundan dolayı bu roundda öne geçen PyTorch.
+
+Kullanım Kolaylığı
+PyTorch, python diliyle sıkı entegrasyonu sayesinde pythonic bir deneyim sunar. Kodun okunabilirliği ve geliştirilebilirliği otomatik olarak projelerin ve araştırmaların da geliştirilebilirliğini hızlandırır. Hızlı prototipleme ve esneklik nedeniyle tercih sebebi genellikle PyTorch olur. Bu TensorFlow’un işe yaramaz olduğu anlamına gelmemeli. TensorFlow’un başlangıçta karmaşık ve soyut API yapısından dolayı bu böyleyken, TensorFlow 2.0 ile kullanım kolaylığı ciddi şekilde iyileştirilmiştir ama esneklik ve hata ayıklama açısından bu round da önde olan Pytorch.
+
+Model Eğitimi ve Performans
+Her iki kütüphane de şüphesiz yüksek performanslı eğitim olanağı ve GPU desteği sağlar. PyTorch hızlı prototipleme ve araştırma odaklı çalışmalar için daha doğal yapı sunarken. TensorFlow daha büyük ölçekli projelerde, üretim ortamlarında ve dağınık eğitimde sunduğu kapsamlı araçlar ile bu roundda atılım yaptı. TensorFlow’un, TensorFlow Serving gibi ek araçları da bulunmaktadır.
+
+Ekosistem ve Topluluk Desteği
+TensorFlow, zengin ekosistemi ile öne çıkar; TensorFlow Lite, TensorFlow Extended ve TensorFlow Serving gibi araçları sayesinde, mobil ve büyük ölçekli uygulamalar için kapsamlı destek sunarken PyTorch ise, özellikle araştırma camiası arasında popüler olup, PyTorch Lightning ve TorchServe gibi projelerle üretim ortamına yönelik çözümler geliştirmektedir. Geniş ve aktif toplulukları sayesinde her iki framework de sürekli olarak gelişmekte ve yeni araçlarla desteklenmektedir. Bu round da puanlar eşit diyelim.
+
+Bu temel farklar projenizde hangi kütüphaneyi kullanacağınıza göre size fikir vermiştir umarım. Daha detaylı bir dokümanlarına göz atabilirsiniz. Ben genellikle PyTorch kullanırım ama bu TensorFlow’un kötü olduğu anlanmına da gelmez. Günün sonunda bunlar amaç değil araç olduğundan dolayı bizler mühendis olarak projelerimize uygun olan aracı seçmeli ve daha az maliyetle daha gelişmiş sistemler kurmalıyız.
